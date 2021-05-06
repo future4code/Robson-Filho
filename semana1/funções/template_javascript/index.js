@@ -1,7 +1,7 @@
     // Exercícios de interpretação de código
     // 1. Leia o código abaixo
 
-/* 
+ 
 
         function minhaFuncao(variavel) {
         	return variavel * 5
@@ -20,7 +20,7 @@
 
         // RESULTADO = IS NOT DIFINED
 
-_____________________________________________________________________
+//_____________________________________________________________________________________________
 
     // 2. Leia o código abaixo
 
@@ -47,8 +47,9 @@ _____________________________________________________________________
 
         RESPOSTA = TRUE, TRUE, TRUE
 
-*/
-// _____________________________________________________________________
+
+//_____________________________________________________________________________________________
+
 // - **Exercícios de escrita de código**
 //     1. Escreva as funções explicadas abaixo:
 
@@ -85,7 +86,8 @@ _____________________________________________________________________
 
 // console.log (informacao("Robson", "18", "São Lourenço", "Estudante"))
 
-// _____________________________________________________________________
+// _____________________________________________________________________________________________
+
 //     2. Escreva as funções explicadas abaixo:
 
 //         a) Escreva uma função que receba 2 números como parâmetros, e, dentro da função, faça a soma das duas entradas e retorne o resultado. Invoque a função e imprima no console o resultado.
@@ -121,7 +123,8 @@ function mensagem(string) {
 
 console.log(mensagem("granada"))
 
-// _______________________________________________________________________________________
+// _____________________________________________________________________________________________
+
 
 //     3. Crie uma função para cada uma das operações básicas (soma, subtração, multiplicação e divisão). Em seguida, peça para o usuário inserir dois números e chame essas 4 funções com esses valores inputados pelo usuário sendo o argumento. Por fim, mostre no console o resultado das operações:
 
