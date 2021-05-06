@@ -48,8 +48,7 @@ _____________________________________________________________________
         RESPOSTA = TRUE, TRUE, TRUE
 
 */
-// _______________________________________________________________________________________
-
+// _____________________________________________________________________
 // - **Exercícios de escrita de código**
 //     1. Escreva as funções explicadas abaixo:
 
@@ -59,12 +58,12 @@ _____________________________________________________________________
 //         
 //         Troque o nome, idade, cidade e se é estudante ou não por informações sobre você. Lembrando que a função não possui entradas, apenas imprime essa mensagem.
 
-function mensagem() {
-    console.log('Eu sou Robson, tenho 18 anos, moro em São Lourenço e sou estudante.')
-}
+// function mensagem() {
+//     console.log('Eu sou Robson, tenho 18 anos, moro em São Lourenço e sou estudante.')
+// }
 
 
-mensagem()
+// mensagem()
 
 
 //         b)  Agora escreva uma função que receba 4 parâmetros que correspondem às informações de uma pessoa: o nome (`string`), a idade (`number`), a cidade (`string`) e uma profissão (`string`). Ela deve retornar uma `string` que unifique todas as informações da pessoa em uma só mensagem com o template:
@@ -79,21 +78,86 @@ mensagem()
 
 //             `"Eu sou Laís, tenho 23 anos, moro em Rua Guarapari 190 e sou instrutora."`
 
+// function informacao(NOME, IDADE, ENDERECO, PROFISSAO) {
+//     const informacaoTotal = `Eu sou ${NOME}, tenho ${IDADE} anos, moro em ${ENDERECO} e sou ${PROFISSAO}`
+//     return informacaoTotal 
+// }
+
+// console.log (informacao("Robson", "18", "São Lourenço", "Estudante"))
+
 // _____________________________________________________________________
 //     2. Escreva as funções explicadas abaixo:
 
 //         a) Escreva uma função que receba 2 números como parâmetros, e, dentro da função, faça a soma das duas entradas e retorne o resultado. Invoque a função e imprima no console o resultado.
 
+function funcao(num1, num2) {
+    return num1 + num2
+    
+}
+
+console.log(funcao(25, 30)) 
+
 //         b) Faça uma função que recebe 2 números e retorne um booleano que informa se o primeiro número é **maior ou igual** ao segundo.
+
+function recebeDoisNumeros(num1, num2) {
+    return num1 >= num2
+}
+
+console.log(recebeDoisNumeros(101, 102))
 
 //         c) Escreva uma função que receba um número e devolva um booleano indicando se ele é par ou não
 
+function recebeNumero(num) {
+    return num %2 == 0 
+}
+
+console.log(recebeNumero(100))
+
 //         d) Faça uma função que recebe uma mensagem (`string`) como parâmetro e imprima o tamanho dessa mensagem, juntamente com uma versão dela em letras maiúsculas.
 
+function mensagem(string) {
+    console.log(`${string.length}, ${string.toUpperCase()}`)
+}
+
+console.log(mensagem("granada"))
 
 // _______________________________________________________________________________________
 
 //     3. Crie uma função para cada uma das operações básicas (soma, subtração, multiplicação e divisão). Em seguida, peça para o usuário inserir dois números e chame essas 4 funções com esses valores inputados pelo usuário sendo o argumento. Por fim, mostre no console o resultado das operações:
+
+let usuarioValor1 = Number(prompt("Digite um valor!"))
+let usuarioValor2 = Number(prompt("Escolha o segundo valor!")
+
+
+
+function soma(num1, num2) {
+    return num1 + num2
+}
+
+console.log(soma(usuarioValor1, usuarioValor2))
+
+
+
+function diferenca(num1, num2) {
+    return num1 - num2
+}
+
+console.log(diferenca(usuarioValor1, usuarioValor2))
+
+
+function multiplicacao(num1, num2) {
+    return num1 * num2
+}
+
+console.log(multiplicacao(usuarioValor1, usuarioValor2))
+
+
+function divisao(num1, num2) {
+    return num1 / num2
+}
+
+console.log(divisao(usuarioValor1, usuarioValor2))
+
 
 //        
 //         Números inseridos: 30 e 3
