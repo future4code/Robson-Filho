@@ -59,12 +59,12 @@
 //         
 //         Troque o nome, idade, cidade e se é estudante ou não por informações sobre você. Lembrando que a função não possui entradas, apenas imprime essa mensagem.
 
-// function mensagem() {
-//     console.log('Eu sou Robson, tenho 18 anos, moro em São Lourenço e sou estudante.')
-// }
+function mensagem() {
+    console.log('Eu sou Robson, tenho 18 anos, moro em São Lourenço e sou estudante.')
+}
 
 
-// mensagem()
+ mensagem()
 
 
 //         b)  Agora escreva uma função que receba 4 parâmetros que correspondem às informações de uma pessoa: o nome (`string`), a idade (`number`), a cidade (`string`) e uma profissão (`string`). Ela deve retornar uma `string` que unifique todas as informações da pessoa em uma só mensagem com o template:
@@ -79,10 +79,10 @@
 
 //             `"Eu sou Laís, tenho 23 anos, moro em Rua Guarapari 190 e sou instrutora."`
 
-// function informacao(NOME, IDADE, ENDERECO, PROFISSAO) {
-//     const informacaoTotal = `Eu sou ${NOME}, tenho ${IDADE} anos, moro em ${ENDERECO} e sou ${PROFISSAO}`
-//     return informacaoTotal 
-// }
+ function informacao(NOME, IDADE, ENDERECO, PROFISSAO) {
+     const informacaoTotal = `Eu sou ${NOME}, tenho ${IDADE} anos, moro em ${ENDERECO} e sou ${PROFISSAO}`
+     return informacaoTotal 
+ }
 
 // console.log (informacao("Robson", "18", "São Lourenço", "Estudante"))
 
