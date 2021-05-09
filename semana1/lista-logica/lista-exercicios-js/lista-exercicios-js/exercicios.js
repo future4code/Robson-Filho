@@ -27,6 +27,8 @@ function calculaAreaRetangulo() {
    console.log(altura * largura)
 }
 
+calculaAreaRetangulo()
+
 //Exercício 2
 
 function imprimeIdade() {
@@ -36,12 +38,16 @@ function imprimeIdade() {
    console.log(anoAtual - anoNascimento)
 }
 
+imprimeIdade()
+
 //Exercício 3
 
 function calculaIMC(peso, altura) {
    // implemente sua lógica aqui
    return peso / (altura * altura)
 }
+
+calculaIMC()
 
 //Exercício 4
 
@@ -54,6 +60,8 @@ function imprimeInformacoesUsuario() {
    console.log(`Meu nome é ${nome}, tenho ${idade} anos, e o meu email é ${email}.`)
 }
 
+imprimeInformacoesUsuario()
+
 //Exercício 5
 
 function imprimeTresCoresFavoritas() {
@@ -64,12 +72,16 @@ function imprimeTresCoresFavoritas() {
    console.log([cor1, cor2, cor3])
 }
 
+imprimeTresCoresFavoritas()
+
 //Exercício 6
 
 function retornaStringEmMaiuscula(string) {
    // implemente sua lógica aqui
    return string.toUpperCase()
 }
+
+retornaStringEmMaiuscula()
 
 //Exercício 7
 
@@ -78,12 +90,16 @@ function calculaIngressosEspetaculo(custo, valorIngresso) {
    return custo / valorIngresso
 }
 
+calculaIngressosEspetaculo()
+
 // Exercício 8
 
 function checaStringsMesmoTamanho(string1, string2) {
    // implemente sua lógica aqui
    return string1.length === string2.length
 }
+
+checaStringsMesmoTamanho()
 
 // Exercício 9
 
@@ -92,12 +108,16 @@ function retornaPrimeiroElemento(array) {
    return array[0]
 }
 
+retornaPrimeiroElemento()
+
 // Exercício 10
 
 function retornaUltimoElemento(array) {
    // implemente sua lógica aqui
    return array[array.length - 1]
 }
+
+retornaUltimoElemento()
 
 //Exercício 11
 
@@ -112,12 +132,16 @@ function trocaPrimeiroEUltimo(array) {
    return array
 }
 
+trocaPrimeiroEUltimo()
+
 // Exercício 12
 
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
    // implemente sua lógica aqui
    return string1.toLowerCase() === string2.toLowerCase()
 }
+
+checaIgualdadeDesconsiderandoCase()
 
 // Exercício 13
 
@@ -137,6 +161,8 @@ function checaRenovacaoRG() {
    console.log(cond1 || cond2 || cond3)
 }
 
+checaRenovacaoRG()
+
 // Exercício 14
 
 function checaAnoBissexto(ano) {
@@ -145,6 +171,8 @@ function checaAnoBissexto(ano) {
    const cond2 = (ano % 4 === 0) && (ano % 100 !== 0)
    return cond1 || cond2
 }
+
+checaAnoBissexto()
 
 // Exercício 15
 
@@ -155,3 +183,5 @@ function checaValidadeInscricaoLabenu() {
    const disponibilidade = prompt("Você possui disponibilidade exclusiva durante os horários do curso?")
 
    console.log(maiorDeIdade === "sim" && ensinoMedio === "sim" && disponibilidade === "sim")
+
+   checaValidadeInscricaoLabenu()
