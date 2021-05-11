@@ -8,45 +8,45 @@
 //             { nome: 'Lais', profissao: "Instrutora", idade: 26}
 //             ```
 
-// function pergunteUsuario() {
-//     const nomeUsuario = prompt("Qual seu nome?")
-//     const idadeUsuario = prompt("Qual a sua idade?")
-//     const profissaoUsuario = prompt("Qual a sua profissão?")
+function pergunteUsuario() {
+    const nomeUsuario = prompt("Qual seu nome?")
+    const idadeUsuario = prompt("Qual a sua idade?")
+    const profissaoUsuario = prompt("Qual a sua profissão?")
 
-//     const usuarioPadrao = {
-//         nome: nomeUsuario,
-//         idade: idadeUsuario,
-//         profissao: profissaoUsuario
-//     }
-//     return console.log(usuarioPadrao, typeof usuarioPadrao)
-// }
+    const usuarioPadrao = {
+        nome: nomeUsuario,
+        idade: idadeUsuario,
+        profissao: profissaoUsuario
+    }
+    return console.log(usuarioPadrao, typeof usuarioPadrao)
+}
 
-// pergunteUsuario()
+pergunteUsuario()
 
 //     2. Crie uma função que receba dois objetos que representam filmes. Eles devem ter as propriedades: ano de lançamento e nome. A função deve retornar uma mensagem no seguinte modelo:
 
-// const filme1 = {
-//     anoDeLancamento: 1972,
-//     nome: "Pokemon"
-// }
-// const filme2 = {
-//     anoDeLancamento: 1999,
-//     nome: "Aladin"
-// }
+const filme1 = {
+    anoDeLancamento: 1972,
+    nome: "Pokemon"
+}
+const filme2 = {
+    anoDeLancamento: 1999,
+    nome: "Aladin"
+}
 
-// function receba(objetos1, objetos2) {
+function receba(objetos1, objetos2) {
 
-//     const filmeRecebido = objetos1.anoDeLancamento < objetos2.anoDeLancamento
-//     const foiLancadoNoMesmoAno = objetos1.anoDeLancamento === objetos2.anoDeLancamento
+    const filmeRecebido = objetos1.anoDeLancamento < objetos2.anoDeLancamento
+    const foiLancadoNoMesmoAno = objetos1.anoDeLancamento === objetos2.anoDeLancamento
 
-//     const respostaA = `O primeiro filme foi lançado antes do segundo? ${filmeRecebido}`
+    const respostaA = `O primeiro filme foi lançado antes do segundo? ${filmeRecebido}`
 
-//     const respostaB = `O primeiro filme foi lançado no mesmo ano do segundo? ${foiLancadoNoMesmoAno}`
+    const respostaB = `O primeiro filme foi lançado no mesmo ano do segundo? ${foiLancadoNoMesmoAno}`
 
-//     return respostaA +"\n"+ respostaB
-// }
+    return respostaA +"\n"+ respostaB
+}
 
-// console.log(receba(filme1, filme2))
+console.log(receba(filme1, filme2))
 
 //         ```
 //         O primeiro filme foi lançado antes do segundo? false
