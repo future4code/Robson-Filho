@@ -116,7 +116,7 @@ if (qualAIdadeDoUsuario >= 18) {
     console.log(`Você tem ${qualAIdadeDoUsuario}, Não pode dirigir!`)
 
 }
-________________________________________________________
+// ________________________________________________________
 
 
 // 2. Agora faça um programa que verifica que turno do dia um aluno estuda. Peça para digitar **M** (matutino) ou **V** (Vespertino) ou **N** (Noturno). Imprima no console a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!". Utilize o bloco `if/else`
