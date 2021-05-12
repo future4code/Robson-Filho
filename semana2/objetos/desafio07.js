@@ -23,7 +23,6 @@ function pergunteUsuario() {
 
 pergunteUsuario()
 
-//     2. Crie uma função que receba dois objetos que representam filmes. Eles devem ter as propriedades: ano de lançamento e nome. A função deve retornar uma mensagem no seguinte modelo:
 
 const filme1 = {
     anoDeLancamento: 1972,
@@ -51,7 +50,7 @@ console.log(receba(filme1, filme2))
 //         ```
 //         O primeiro filme foi lançado antes do segundo? false
 //         O primeiro filme foi lançado no mesmo ano do segundo? true
-//         ```
+
 
 //     3. Crie uma função a mais pro exercício 3 de escrita de código. Essa função vai auxiliar o controle de estoque do sacolão: ela deve receber por parâmetro uma das frutas e retornar esse mesmo objeto com a propriedade `disponibilidade` com o valor invertido.
 
