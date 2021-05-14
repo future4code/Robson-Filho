@@ -11,50 +11,6 @@
  * 
  */
 
-//     Essa etapa do projeto consiste em criar um programa que:
-
-// 1 - Imprime uma mensagem no console "Bem vindo ao jogo de Blackjack!".
-
-// 2 - Envia um `confirm`, perguntando ao usuário: "Quer iniciar uma nova rodada?".
-
-// - 💡 Dica
-
-//     `confirm` é um comando que cria uma caixa com dois botões: `ok` e `cancelar`, permitindo fazer perguntas de "sim" e "não". Caso o usuário responda sim (`ok`) o comando devolve o valor `true`, caso contrário, devolve `false`. Desta forma, podemos usar condicionais para decidir o que fazer em cada caso
-
-//     ```jsx
-//     if(confirm("pergunta de sim ou não")) {
-//     	// o que fazer se o usuário clicar "ok"
-//     } else {
-//     	// o que fazer se o usuário clicar "cancelar"
-//     }
-//     ```
-
-// 3 - Se o usuário responder `cancel`, imprime uma mensagem no console "O jogo acabou".
-
-// 4 - Se o usuário responder `Ok`, o programa deve iniciar uma nova rodada.
-
-// "Usuário - cartas: Q♣️ 10♣️  - pontuação 20" 
-// "Computador - cartas: Q♣️ 10♣️  - pontuação 20"
-
-
-// const carta = comprarCarta()
-
-// console.log("Bem vindo ao jogo de Blackjack!")
-// if(confirm("Quer começar uma nova rodada?")) {
-//    console.log("Usuário - cartas:", carta.texto, carta.texto, "pontuação", carta.valor)
-//    console.log("Conputador - cartas:", carta.texto, carta.texto, "pontuação", carta.valor)
-// } else {
-//    console,log("O jogo acabou")
-// }
-
-
-// const mostrarTexto = (carta) => {
-//    console.log(`Usuário Usuário - ${carta.texto}  - pontuação 20`)
-// }
-// "Usuário - cartas: Q♣️ 10♣️  - pontuação 20" 
-// "Computador - cartas: Q♣️ 10♣️  - pontuação 20"
-
-
 const carta = comprarCarta()
 
 const carta1 = comprarCarta() 
