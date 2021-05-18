@@ -8,7 +8,14 @@ function inverteArray(array) {
 
 function retornaNumerosParesElevadosADois (array) {
    // implemente sua lógica aqui
+   let novoArray = [];
+   for (let i = 0; i < array.length; i++)
+   if (array[i] %2 === 0) {
+      novoArray.push(array[i] * array[i])
+   }
+   return novoArray
 }
+console.log(retornaNumerosParesElevadosADois(2,4,6))
 
 //Exercício 3
 
@@ -33,7 +40,7 @@ function retornaMaiorNumero(array) {
 
 function retornaQuantidadeElementos (array) {
    // implemente sua lógica aqui
-
+   return array.length
 }
 
 //Exercício 6
@@ -41,24 +48,23 @@ function retornaQuantidadeElementos (array) {
 function retornaExpressoesBooleanas() {
    // implemente sua lógica aqui
 
-   let array = [];
    const booleano1 = true
    const booleano2 = false
    const booleano3 = !booleano2 
    const booleano4 = !booleano3 
 
    if (booleano1 && booleano2 && !booleano4) {
-      array.push()
+      console.log()
    } else if ((booleano1 && booleano2) || !booleano3 ) {
-      array.push()
+      
    } else if ((booleano2 || booleano3) && (booleano4 || booleano1)) {
-      array.push()
+      
    } else if (!(booleano2 && booleano3) || !(booleano1 && booleano3)){
-      array.push()
+      
    } else if (!(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3)) {
-      array.push()
+      
    }
-   return array
+   return
 }
 
 //Exercício 7
