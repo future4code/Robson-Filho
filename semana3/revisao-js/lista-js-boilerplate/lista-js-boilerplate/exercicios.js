@@ -21,6 +21,12 @@ console.log(retornaNumerosParesElevadosADois(2,4,6))
 
 function retornaNumerosPares (array) {
    // implemente sua lógica aqui
+   const novoArray = [];
+   for (let i = 0; i < array.length; i++) 
+   if (array[i] %2 === 0) {
+      novoArray.push(array[i])
+   }
+   return novoArray
 }
 
 
@@ -54,7 +60,7 @@ function retornaExpressoesBooleanas() {
    const booleano4 = !booleano3 
 
    if (booleano1 && booleano2 && !booleano4) {
-      console.log()
+      console.log
    } else if ((booleano1 && booleano2) || !booleano3 ) {
       
    } else if ((booleano2 || booleano3) && (booleano4 || booleano1)) {
