@@ -1,0 +1,38 @@
+* {
+     padding: 0%;
+     box-sizing: border-box;
+}
+
+body {margin: 0;
+width: 100vw;}
+
+h1 {font-size: 4rem;}
+
+ul {list-style: none;
+    display: flex;}
+
+li {margin: 0px 15px;}
+
+nav {display: flex;
+     justify-content: space-between;
+     background-color: black}
+
+nav p {font-weight: bold;}
+
+header {height: calc(100vh - 150px);
+        background: no-repeat center/cover url(./imagens/1042582.jpg); }
+
+h1 {font-size: 30px; margin-left: 30px;}
+
+p {margin-left: 30px; max-width: 275px;}
+
+button {margin-left: 30px; padding: 4px 6px; border-radius: 3px;
+        font-weight: bold; border: 0; background-color: #fc9920;
+        color: white;}
+
+li a {text-decoration: none; color: white;
+     background-color: black; padding: 3px;
+     border-radius: 5px;}
+      
+nav p {color: white;}
+
