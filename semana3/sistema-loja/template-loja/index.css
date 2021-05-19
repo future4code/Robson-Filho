@@ -1,3 +1,5 @@
+/* cabeçalho */
+
 * {
      padding: 0%;
      box-sizing: border-box;
@@ -36,3 +38,21 @@ li a {text-decoration: none; color: white;
       
 nav p {color: white;}
 
+div img {width: 50px;}
+
+/* footer */
+
+.footer {background-color: #fc9920; padding-bottom: 6px;}
+
+#fotominha {width: 130px; border-radius: 100px; margin-left: 390px;
+            margin-top: 10px;}
+
+span {position: absolute; left: 60px; top: 500px; font-weight: bold;}
+
+.lista-genero {display: block; position: absolute; top: 510px; margin-left: 45px;}
+
+.logo1 {position: absolute; display: block; margin-left: 750px;
+        margin-top: 20px; width: 40px; }
+
+.logo2 {position: absolute; display: block; margin-left: 745px;
+        margin-top: 80px; width: 35x;}
