@@ -151,8 +151,8 @@ td button:active{color: white;}
     font-size: 10px;
     color: black;
     position: absolute;
-    left: 440px;
-    top: 600px;
+    left: 420px;
+    top: 510px;
 }
 
 #back-button:hover {
@@ -162,10 +162,14 @@ td button:active{color: white;}
 #back-button:active{color: white;}
 
 table {position: relative;
-       left: 220px;}
+       left: 220px;
+       }
 
 img.icone {width: 15px;}
 
 input {border-right: white;
        border-left: none;
-       border-block-start: none;}
+       border-block-start: none;
+       position: relative;
+       width: 300px;}
+
