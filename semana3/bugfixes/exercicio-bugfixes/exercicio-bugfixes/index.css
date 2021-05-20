@@ -98,11 +98,14 @@ div>p {    position: relative;
 }
 
 #container-para-comprar {
-    background-color: white;
+    background-color: lightsalmon;
+    position: absolute;
+    top: 350px;
+    
 }
 
 #container-para-comprar>p {
-    color: #2274a5;
+    color: #020202;
     padding: 100px 0;
     font-size: 60px;
 }
