@@ -145,6 +145,9 @@ td button {
     border-radius: 5px;
     font-size: 10px;
     color: black;
+    position: absolute;
+    left: 440px;
+    top: 600px;
 }
 
 #back-button:hover {
@@ -154,4 +157,4 @@ td button {
 table {position: relative;
        left: 220px;}
 
-
+img.icone {width: 15px;}
