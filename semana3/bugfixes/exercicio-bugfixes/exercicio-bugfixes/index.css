@@ -70,6 +70,21 @@ div img {
   *  ESTILOS HOME 
   *
   **/
+#container-de-descricao>ol {
+    padding-left: 20px;
+    width: 195px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;}
+
+div>p {    position: relative;
+    left: 3px;
+}
+
+#h3-home {color: white;
+          position: relative;
+          margin-right: 30px;
+}
 
 #container-de-descricao {
     background-color: #2274a5;
@@ -89,6 +104,8 @@ div img {
     padding: 100px 0;
     font-size: 60px;
 }
+
+#container-de-descricao.container {padding: 60px;}
 
 
 /**
@@ -133,3 +150,4 @@ td button {
 #back-button:hover {
     background-color: #635a3d
 }
+
