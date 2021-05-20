@@ -38,7 +38,7 @@ div img {
 }
 
 .botao-amarelo {
-    background-color: #ffaf43;
+    background-color: #2274a5;
     width: 250px;
     height: 40px;
     border-radius: 5px;
@@ -51,10 +51,10 @@ div img {
 }
 
 .botao-amarelo:hover {
-    background-color: #c44f00;
+    background-color: #2274a5;
 }
 
-.botao-amarelo:active{color: aqua;}
+.botao-amarelo:active{color: white;}
 
 .container {
     height: 500px;
@@ -98,11 +98,11 @@ div>p {    position: relative;
 }
 
 #container-para-comprar {
-    background-color: #e7eb90;
+    background-color: white;
 }
 
 #container-para-comprar>p {
-    color: #c44f00;
+    color: #2274a5;
     padding: 100px 0;
     font-size: 60px;
 }
@@ -126,7 +126,7 @@ table {
 }
 
 td button {
-    background-color: #fadf63;
+    background-color: #2274a5;
     width: 150px;
     height: 30px;
     border-radius: 5px;
@@ -134,7 +134,7 @@ td button {
 }
 
 td button:hover{background-color: #2274a5;}
-td button:active{color: firebrick;}
+td button:active{color: white;}
 
 .container-do-search {
     margin-top: 20px;
@@ -156,12 +156,16 @@ td button:active{color: firebrick;}
 }
 
 #back-button:hover {
-    background-color: #635a3d
+    background-color: #2274a5
 }
 
-#back-button:active{color: #c44f00;}
+#back-button:active{color: white;}
 
 table {position: relative;
        left: 220px;}
 
 img.icone {width: 15px;}
+
+input {border-right: white;
+       border-left: none;
+       border-block-start: none;}
