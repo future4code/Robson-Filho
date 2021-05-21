@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,51 +8,71 @@
     <link rel="stylesheet" type="text/css" href="add-produto.css">
     <title>Adicionar Produto</title>
 </head>
-<body>
-    <div>
-        <p>Nome da lojinha</p>
-    </div>
-    
-    <div>]
-        
-        <a href="index.html">Página Inicial</a>
-        <a href="ctrl-estoque.html">Controle de Estoque</a>
-        <a href="add-produto.html">Adicionar Produto</a>
-        <a href="funcionarios.html">Funcionários</a>
-    </div>
 
-    
+<body>
+
+    <header>
+        <nav>
+            <p>Sessão adicionar livros</p>
+            <ul>
+                <li><a class="buttom-nav" href="index.html">Página Inicial</a></li>
+                <li><a class="buttom-nav" href="ctrl-estoque.html">Livros</a></li>
+                <li><a class="buttom-nav" href="add-produto.html">Adicionar Livro</a></li>
+                <li><a class="buttom-nav" href="funcionarios.html">Funcionários</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-content">
+            <!-- <h1>Sessão de Adicionar Livros</h1> -->
+            <!-- <p>Diversidade de Livros, Historias, Mangás, Ficção e etc!</p> -->
+            <!-- <a href="ctrl-estoque.html"><button>Join The Fiction</button></a> -->
+        </div>
+    </header>
+
     <h2>Adicionar Produto</h2>
+
     <form action="">
         <div>
-            <label for="link-foto">Link para foto: </label>
-            <input type="url" id="link-foto" name="link-foto">
+            <label id="link-para-foto" for="link-foto">Link para foto: </label>
+            <input id="imput-para-foto" type="url" id="link-foto" name="link-foto">
         </div>
-        
+
         <div>
-            <label for="descricao">Descrição do produto: </label>
+            <label id="link-para-descricao" for="descricao">Descrição do P: </label>
             <!-- Adicione o id apropriado para o input abaixo -->
-            <input type="text" id="descricao" name="descrição">
+            <input id="imput-para-descricao" type="text" id="descricao" name="descrição">
         </div>
-        
+
         <div>
-            <label for="preco">Preço (em R$): </label>
+            <label id="link-para-preco" for="preco">Preço (em R$): </label>
             <!-- Adicione o id apropriado e o type para receber números abaixo -->
-            <input type="number" id="preco" name="preço">
+            <input id="imput-para-preco" type="number" id="preco" name="preço">
         </div>
-        
+
         <div>
             <!-- Preencha as propriedades necessárias para os elementos abaixo -->
-            <label>Quantidade disponível: </label>
-            <input type="number"> 
+            <label id="link-para-quantidade">Quant. estoque: </label>
+            <input id="imput-para-quantidade" type="number">
         </div>
 
         <div class="form-add">
             <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
-            <button type="submit" name="Enviar">Enviar</button>
+            <button id="buttom-enviar" type="submit" name="Enviar">Enviar</button>
         </div>
 
     </form>
 
+<footer>
+    <div>
+        <!-- <img id="naruto" src="./imagens/unnamed.png" alt=""> -->
+        
+        <h1>O melhor site para ler seus Mangás!</h1>
+        <h2 id="anime2">Redes Sociais na Página inicial.</h2>
+        <img id="manga" src="https://upload.wikimedia.org/wikipedia/commons/3/37/Simple_Manga.png" alt="">
+        <h5>ㅤ</h5>
+    </div>
+</footer>
+
 </body>
+
 </html>
