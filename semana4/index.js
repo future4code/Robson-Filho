@@ -1,27 +1,24 @@
-// Enunciado
-// Crie uma função que recebe um array de números e um número escolhido. A função deve retornar quantas vezes este número aparece no array.
+function filtraTarefas() {
+    const tarefas = [
+      { titulo: "Fazer Remember", status: "done", tempo: 30 },
+      { titulo: "Fazer Challange", status: "todo", tempo: 30 },
+      { titulo: "Assistir Aula", status: "done", tempo: 120 },
+      { titulo: "Fazer almoço nutritivo", status: "done", tempo: 60 },
+      { titulo: "Ler atentamente exercícios do dia", status: "doing", tempo: 20 },
+      { titulo: "Fazer exercício do dia", status: "doing", tempo: 180 },
+      { titulo: "Fazer desafio", status: "doing", tempo: 60 },
+      { titulo: "Ir para o Stand Up", status: "todo", tempo: 30 },
+      { titulo: "Enviar Feedback", status: "todo", tempo: 15 },
+      { titulo: "Enviar Exercício", status: "todo", tempo: 15 },
+      { titulo: "Jogar Videogame", status: "todo", tempo: 120 },
+      { titulo: "Assistir Novela", status: "todo", tempo: 90 }
+   ]
+  
+   // Escreva seu código aqui
+   const atividadesTerminadas = tarefas.filter(function(status) {
+       console.log(status)
+   })
+  
+  }
 
-// Ex: se o array for [1, 4, 8, 2, 5, 4, 10, 1, 2, 4, 7, 5] e o número escolhido for 4, sua função deve dizer: O número 4 aparece 3x
-
-// Para o mesmo array, se o número escolhido for 3, sua função deve retornar: Número não encontrado
-
-// Escreva sua função abaixo 👇👇👇
-
-const array = [1, 4, 8, 2, 5, 4, 10, 1, 2, 4, 7, 5];
-const numeroUsado = 4; 
-const vezesnumeroEscolhidoApareceu = "";
-
-function contaOcorrencias(arrayDeNumeros, numeroEscolhido) {
-  // Escreva seu código aqui
- for (let i = 0; i < array.length; i++) {
-     if (numeroUsado === array[i]) {
-         vezesnumeroEscolhidoApareceu.push(numeroUsado.length)
-         console.log(vezesnumeroEscolhidoApareceu)
-     } else {
-         console.log("Nuúmero indefinido")
-     }
-     
- }
-
-}
-contaOcorrencias(array, numeroUsado)
+  filtraTarefas()
