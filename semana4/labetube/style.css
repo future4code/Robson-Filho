@@ -1,24 +1,138 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-header {
-display: flex;
-justify-content: space-evenly;
+/* HEADER */
 
+header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .lupa {
-    width: 20px;
+  width: 20px;
+  height: 25px;
+  padding-bottom: 4px;
+  background-color: gainsboro;
+  border-radius: 1px;
+}
+
+.lupa:hover {
+  cursor: pointer;
 }
 
 #labetube-logo {
-    width: 35px;
+  width: 35px;
 }
 
 #logo-e-nome {
+  display: flex;
+  padding-left: 80px;
+  padding-top: 4px;
+}
+
+input {
+  width: 350px;
+  height: 25px;
+  border: 1px 1px 1px 1px gainsboro;
+}
+
+#pesquisa {
+  padding-right: 300px;
+  display: flex;
+  padding-top: 10px;
+}
+
+
+
+/* NAV */
+
+nav i {
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #FF8A1E;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+}
+
+nav>a:hover {
+  color: white;
+}
+
+
+/* MAIN */
+
+
+
+video {
+    width: 170px;
+
+}
+
+main {
+    
+    display: flex;
+}
+
+#videos {
+    
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
+
+.video-pág {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50.3px;
+}
+
+a {
+  text-decoration: none;
+}
+
+div>a:hover {
+  color: #FF8A1E;
+}
+
+
+.video-pág video{
+  width: 720px;
+  
+  
+}
+
+.item-video {
+    margin: 10px;
+}
+/* FOOTER */
+
+footer {
+    background-color: #FF8A1E;
+    padding: 20px 0px;
+    /* margin-top: 130px; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+footer>h3 {
+  margin: 5px;
+  color: black
+}
+
+h3>a:hover {
+  color: white;
+}
+
+a:visited {
+  color: black;
 }
