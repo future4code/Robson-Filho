@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import axios from "axios"
+import styled from "styled-components"
+import { react } from "@babel/types"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const url = "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users"
+const url2 = "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users"
+
+const headers = {
+  headers: {
+  Authorization: "robson-silva-molina"
+  }
 }
 
-export default App;
+body
+
+export default class app extends React.Component {
+
+  state = {
+    Users: [],
+    inputUsers: ""
+  }
+
+  componentDidMount() {
+    this.pegarPlaylists();
+  }
+
+  addUser = () => {
+    const body = {
+      name: "Pamela",
+      email: "Pamelamedeios@hotmail.com",
+      }
+    }
+
+    axios.post(url2,body,headers)
+    .then()
+    .catch()
+  }
+
