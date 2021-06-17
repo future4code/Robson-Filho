@@ -6,7 +6,11 @@ export default class TelaCadastrado extends React.Component {
         return (
             <div>
 
-                <h1>TelaCadastrado</h1>
+                <h1>Lista De cadastrados</h1>
+                <h1>fulano</h1>
+                <h1>fulano</h1>
+                
+                <button onClick={this.props.irParaCadastro}>Cadastrar aqui!</button>
                 
             </div>
         )

@@ -2,24 +2,32 @@ import React from "react";
 import axios from "axios";
 import styled from "styled-components";
 import { render } from "@testing-library/react";
-import TelaCadastro from "./components/cadastro/TelaCadastro"
-import TelaCadastrado from "./components/cadastrados/TelaCadastrado"
+import TelaLista from "./components/cadastro/TelaDeCadastro"
+import TelaDeCadastro from "./components/lista/TelaDeLista"
 
  export default class app extends React.Component {
   state = {
-    TelaAtual: "batata"
+    TelaAtual: "cadastrar"
   }
 
   escolheTela = () => {
     switch (this.state.TelaAtual){
-      case "cadastro": 
-      return <TelaCadastro/>
-      case "lista":
-      return <TelaCadastrado/>
+      case "lista": 
+      return <TelaDeCadastro irParaCadastro={this.irParaCadastro}/>
+      case "cadastrar":
+      return <TelaLista irParaLista={this.irParaLista}/>
       default:
-        return <div>Error! página não encontrada :C</div>
+        return <div>Error! página não encontrada</div>
       
     }
+  }
+
+  irParaCadastro = () => {
+    this.setState({TelaAtual: "cadastrar"})
+  } 
+
+  irParaLista = () => {
+    this.setState({TelaAtual: "lista"})
   }
 
   render(){
