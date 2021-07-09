@@ -1,18 +1,41 @@
-import React, { useState, useEffect } from "react";
-import styled from "styled-components";
+import React, { useState, useEffect, Component } from "react";
 import axios from "axios";
-import { object } from "prop-types";
+// import { object } from "prop-types";
+import styled from "styled-components";
+
+const CardImg = styled.img `
+width: 100px;
+`
 
 export const TelaInicio = () => {
-  const [profile, setProfile] = useState("");
+
+  // Like
+  
+  const url = 'https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:aluno/choose-person'
+
+  const [like, setLike] = useState(false)
+
+  useEffect(() => {
+    axios.post(url)
+    .then((res) => {
+      setLike(true)
+    })
+    .catch((err) => {
+      console.log(err)
+    })
+  }, [])
+
+// Deslike
+
+  const [profile, setProfile] = useState({});
   const [people, setPeople] = useState({})
+  const [newLoad, setNewLoad] = useState(0)
 
-  const [newLoad, setNewLoad] = useState(1)
 
-  const getProfile = () => {
+  const getProfiles = () => {
     axios
     .get(
-      `https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:${profile}/person`
+      `https://us-central1-missao-newton.cloudfunctions.net/astroMatch/Robson/person`
     )
     .then((res) => {
       setPeople(res.data.profile);
@@ -23,29 +46,25 @@ export const TelaInicio = () => {
   }
 
   useEffect(() => {
- 
-    getProfile()
+    getProfiles()
   }, [newLoad]);
 
-  const like = (event) => {
-    setProfile(event.target.value);
-  };
+  // const like = (event) => {
+  //   setProfile(event.target.value);
+  // };
 
   const deslike = () => {
-    getProfile()
     setNewLoad(newLoad +1)
-    console.log(newLoad)
-    console.log(people)
   };
 
   return (
     <div>
       <h1>Eu tenho: {people.age}</h1>
       <h1>eu sou: {people.name}</h1>
-      <img src={people.photo}></img>
+      <CardImg src={people.photo} alt='pessoa'/>
       <h1>INICIO</h1>
-      <button onClick={like}>Like</button>
-      <button onClick={() => deslike()}>deslike</button>
+      <button onClick={setLike}>Like</button>
+      <button onClick={deslike}>deslike</button>
       {/* <p>eu sou: {profile.bio}</p> */}
     </div>
   );
