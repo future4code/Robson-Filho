@@ -1,20 +1,16 @@
 
-import { Feed } from "./pages/feed/Feed";
-import { Post } from "./pages/post/Post";
+import { ThemeProvider } from "styled-components";
 import { Router } from "./routes/Router";
-import {Login} from './pages/login/Login'
-import {Cadastrar} from './pages/cadastrar/Cadastrar'
+import { theme } from './constants/theme'
+import { GlobalStyled } from "./global/globalStyled";
 
 
 const App = () => {
   return (
-    <div>
-      {/* <Feed/>
-      <Login/>
-      <Cadastrar/>
-      <Post/> */}
+    <ThemeProvider theme={theme}>
+      <GlobalStyled/>
       <Router/>
-    </div>
+    </ThemeProvider>
   );
 }
 
