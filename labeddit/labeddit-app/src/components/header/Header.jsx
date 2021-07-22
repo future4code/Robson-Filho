@@ -1,13 +1,20 @@
 import React from 'react' 
-import { HeaderStyled } from './Styled'
+import { useHistory } from 'react-router-dom'
+import { HeaderStyled, LogoLabeddit, ButtonLogin } from './Styled'
 import { BodyStyled } from './Styled'
 
+
 export const Header = () => {
-    return(
+   const history = useHistory()
+   const goToLogin = () => {
+      history.push('/')
+   }
+   
+   return(
 
     <HeaderStyled>
-       <div>
-       </div>
+       <LogoLabeddit src='https://tecnomotor.com.br/novosite/images/contato/linkedin-icon.png'/>
+       <ButtonLogin onClick={goToLogin}>Login</ButtonLogin>
     </HeaderStyled>
 
     )}
