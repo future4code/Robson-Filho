@@ -1,6 +1,5 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
-import Button from '@material-ui/core/Button'
 import {ButtonSecondaryColor, TextApp, AppleStoreImage, GooglePlayImage, FormDiv, DivLoginAll, RegisterDiv, InputTextEmail, ImputTextSenha, ButtonRegister, PrimeiraVezLabeddit} from './Styled'
 import { Header } from '../../components/header/Header'
 
