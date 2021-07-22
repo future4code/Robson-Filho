@@ -6,6 +6,7 @@ background-color: #222222;
 height: 10vh;
 display: flex;
 justify-content: space-between;
+box-shadow: 0px 18px #9CC9B5;
 `
 
 export const LogoLabeddit = styled.img`

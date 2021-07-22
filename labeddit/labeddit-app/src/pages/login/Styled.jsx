@@ -66,10 +66,10 @@ export const FormDiv = styled.div`
 `
 
 export const GooglePlayImage = styled.img`
-width: 150px;
+width: 15vw;
 `
 
 export const AppleStoreImage = styled.img`
-width: 150px;
+width: 15vw;
 margin-left: 63vw;
 `

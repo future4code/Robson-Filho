@@ -26,7 +26,7 @@ export const Login = () => {
             </FormDiv>
             <ButtonSecondaryColor onClick={goToFeed}>ENTRAR</ButtonSecondaryColor>
             <RegisterDiv>
-            <PrimeiraVezLabeddit>Primeira vez no Labeddit?</PrimeiraVezLabeddit>
+            <PrimeiraVezLabeddit>Primeira vez no Labennin?</PrimeiraVezLabeddit>
             <ButtonRegister onClick={goToRegister}>CADASTRE-SE</ButtonRegister>
             </RegisterDiv>
         </DivLoginAll>

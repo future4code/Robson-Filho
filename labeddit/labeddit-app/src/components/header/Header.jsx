@@ -1,7 +1,6 @@
 import React from 'react' 
 import { useHistory } from 'react-router-dom'
 import { HeaderStyled, LogoLabeddit, ButtonLogin } from './Styled'
-import { BodyStyled } from './Styled'
 
 
 export const Header = () => {
