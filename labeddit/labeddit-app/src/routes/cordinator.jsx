@@ -11,6 +11,11 @@ export const GoToRegister = () => {
 
 }
 
+export const GoToPost = () => {
+    const history = useHistory()
+    history.push('/feed')
+}
+
 
 
 // export const goToRegister = (history) => {

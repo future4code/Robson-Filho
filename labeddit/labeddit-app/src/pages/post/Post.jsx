@@ -1,5 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router'
+import { HeaderOption } from '../../components/header-com-opcoes/HeaderOptions'
+import {AdicionarPost, ImagemAdicionar} from './Styled'
 
 export const Post= () => {
     
@@ -13,8 +15,8 @@ export const Post= () => {
     
     return(
     <div>
+        <HeaderOption/>
         <p>POST</p>
-        <button onClick={goToFeed}>FEED</button>
-        <button onClick={goToLogin}>LOGOUT</button>
+        <AdicionarPost href="/"><ImagemAdicionar src="https://cdn.icon-icons.com/icons2/1129/PNG/128/addafolderinterfaceblacksymbolwithplussign_79731.png" alt="Imagem de botão para adicionar post" /></AdicionarPost>
     </div>
     )} 

@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom'
 import {ButtonSecondaryColor, TextApp, AppleStoreImage, GooglePlayImage, FormDiv, DivLoginAll, RegisterDiv, InputTextEmail, ImputTextSenha, ButtonRegister, PrimeiraVezLabeddit} from './Styled'
 import { Header } from '../../components/header/Header'
 
+
 export const Login = () => {
     const history = useHistory()
     const goToRegister = () => {

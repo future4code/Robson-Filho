@@ -1,8 +1,9 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
-import {Header} from '../../components/header/Header'
+import { HeaderOption } from '../../components/header-com-opcoes/HeaderOptions'
 import {CardPosts} from '../../components/cardpost/CardPosts'
 import { useState, useEffect } from 'react'
+import {GoToPost} from '../../routes/cordinator'
 import axios from 'axios'
 
 
@@ -32,18 +33,18 @@ export const Feed = () => {
     //     }, [])
     // }
 
-    const url = 'https://labeddit.herokuapp.com/posts'
+    // const url = 'https://labeddit.herokuapp.com/posts'
 
-    useEffect(() => {
-        // Atualiza o titulo do documento usando a API do browser
-        axios.get(url, Header)
-        .then((res) => {
-            console.log(res)
-        })
-        .catch((err) => {
-            console.log(err)
-        })
-      }, []);
+    // useEffect(() => {
+    //     // Atualiza o titulo do documento usando a API do browser
+    //     axios.get(url, Header)
+    //     .then((res) => {
+    //         console.log(res)
+    //     })
+    //     .catch((err) => {
+    //         console.log(err)
+    //     })
+    //   }, []);
    
     
     const history = useHistory()
@@ -53,10 +54,10 @@ export const Feed = () => {
     
     return(
     <div>
-        <Header/>
+        <HeaderOption/>
         <CardPosts/>
         <p>FEED</p>
-        <button onClick={goToFeed}>POST</button>
+        <button onClick={GoToPost}>POST</button>
     </div>
     ) }
 

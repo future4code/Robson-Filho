@@ -40,6 +40,7 @@ height: 4vh;
 export const PrimeiraVezLabeddit = styled.p`
 margin-left: 4vw;
 display: inline;
+margin-right: 0.4vw;
 `
 
 export const TextApp = styled.p`
