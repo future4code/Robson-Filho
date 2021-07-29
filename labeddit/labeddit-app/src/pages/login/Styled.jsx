@@ -62,7 +62,7 @@ border-radius: 1vh;
 box-shadow: 15px 15px #9CC9B5 ;
 `
 
-export const FormDiv = styled.div`
+export const FormDiv = styled.form`
 
 `
 

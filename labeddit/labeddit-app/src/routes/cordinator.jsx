@@ -1,19 +1,15 @@
 
-import {useHistory} from 'react-router-dom' 
-
-
-
-
-export const GoToRegister = () => {
-    const history = useHistory()
-
+export const goToRegister = (history) => {
     history.push('/cadastrar')
 
 }
 
-export const GoToPost = () => {
-    const history = useHistory()
-    history.push('/feed')
+export const goToFeed = (history) => {
+    history.push('/')
+}
+
+export const goToPost = (history) => {
+    history.push('/post')
 }
 
 

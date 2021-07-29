@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom'
 import { HeaderOption } from '../../components/header-com-opcoes/HeaderOptions'
 import {CardPosts} from '../../components/cardpost/CardPosts'
 import { useState, useEffect } from 'react'
-import {GoToPost} from '../../routes/cordinator'
+import {goToPost} from '../../routes/cordinator'
 import axios from 'axios'
 
 
@@ -57,7 +57,7 @@ export const Feed = () => {
         <HeaderOption/>
         <CardPosts/>
         <p>FEED</p>
-        <button onClick={GoToPost}>POST</button>
+        <button onClick={goToPost}>POST</button>
     </div>
     ) }
 

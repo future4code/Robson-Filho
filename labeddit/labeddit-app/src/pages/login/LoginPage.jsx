@@ -2,18 +2,20 @@ import React from 'react'
 import { useHistory } from 'react-router-dom'
 import {ButtonSecondaryColor, TextApp, AppleStoreImage, GooglePlayImage, FormDiv, DivLoginAll, RegisterDiv, InputTextEmail, ImputTextSenha, ButtonRegister, PrimeiraVezLabeddit} from './Styled'
 import { Header } from '../../components/header/Header'
+import { useForm } from '../../hooks/useForm'
+import {login} from "../../services/user"
+              
 
 
-export const Login = () => {
+export const LoginPage = () => {
+    // useUnProtectedPage()
     const history = useHistory()
-    const goToRegister = () => {
-        history.push('/cadastrar')
-    }
+    const {form, onChange} = useForm({email:"", password:""})
 
-    const goToFeed = () => {
-        history.push('/feed')
+    const handleSubmit = (event) => {
+        event.preventDefault()
+        login(form, history)
     }
-    
 
     return (
     <div>
@@ -21,14 +23,29 @@ export const Login = () => {
         
         <DivLoginAll>
             <h3>⠀⠀⠀⠀⠀</h3>
-            <FormDiv>
-            <InputTextEmail type='text' placeholder='EMAIL'/>
-            <ImputTextSenha type='password' placeholder='SENHA' />
+
+            <FormDiv onSubmit={handleSubmit}>
+
+            <InputTextEmail  
+            placeholder='EMAIL'
+            type="email"
+            name="email"
+            value={form.email}
+            onChange={onChange}/>
+
+            <ImputTextSenha  
+            placeholder='SENHA'
+            type="password"
+            name="password"
+            value={form.password}
+            onChange={onChange}/>
+
             </FormDiv>
-            <ButtonSecondaryColor onClick={goToFeed}>ENTRAR</ButtonSecondaryColor>
+            
+            <ButtonSecondaryColor>ENTRAR</ButtonSecondaryColor>
             <RegisterDiv>
             <PrimeiraVezLabeddit>Primeira vez no Labennin?</PrimeiraVezLabeddit>
-            <ButtonRegister onClick={goToRegister}>CADASTRE-SE</ButtonRegister>
+            <ButtonRegister onSubmit={handleSubmit}>CADASTRE-SE</ButtonRegister>
             </RegisterDiv>
         </DivLoginAll>
         <TextApp>Obtenha o Aplicativo.</TextApp>

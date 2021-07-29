@@ -1,5 +1,5 @@
 import React from 'react'
-import {Login} from '../pages/login/Login'
+import {LoginPage} from '../pages/login/LoginPage'
 import { Feed } from '../pages/feed/Feed'
 import {Cadastrar} from '../pages/cadastrar/Cadastrar'
 import { Post } from '../pages/post/Post'
@@ -11,8 +11,8 @@ export const Router = () => {
     return (
     <BrowserRouter>
     <Switch>
-        <Route exact path='/'>
-            <Login/>
+        <Route exact path='/login'>
+            <LoginPage/>
         </Route>
         <Route exact path='/cadastrar'>
             <Cadastrar/>
@@ -20,7 +20,7 @@ export const Router = () => {
         <Route exact path='/cadastrado'>
             <CadastradoPage/>
         </Route>
-        <Route exact path='/feed'>
+        <Route exact path='/'>
             <Feed/>
         </Route>
         <Route exact path='/post'>
