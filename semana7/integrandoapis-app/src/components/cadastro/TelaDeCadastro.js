@@ -1,5 +1,4 @@
 import React from "react"
-import styled from "styled-components"
 import axios from "axios"
 
 export default class TelaCadastro extends React.Component {
@@ -24,13 +23,14 @@ export default class TelaCadastro extends React.Component {
         }
         axios.post(url,body, {
             headers: {
-                Authorization: "Robson-Silva-Molina"
+           Authorization: "robson-molina"
+
             }
         })
         .then((res) => {
             alert("usuario cadastrado com sucesso!")
-            this.setState({nome: "", email: ""})
-        })
+
+
         .catch((err) => {
             alert(err.response.data.message)
         })
