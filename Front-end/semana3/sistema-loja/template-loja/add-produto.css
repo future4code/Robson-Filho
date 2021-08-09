@@ -1,0 +1,237 @@
+/* Header */
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  margin: 0px 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 16px;
+}
+
+.buttom-nav:hover {
+  background-color: darkorchid;
+}
+
+.buttom-nav:active {
+  color: black;
+}
+
+nav p {
+  font-weight: bold;
+}
+
+header {
+  height: calc(100vh - 150px);
+  background: no-repeat center/cover url("imagens/favorito.gif");
+}
+
+h1 {
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+p {
+  margin-left: 30px;
+  max-width: 275px;
+}
+
+button {
+  margin-left: 30px;
+  padding: 4px 6px;
+  border-radius: 3px;
+  font-weight: bold;
+  border: 0;
+  background-color: #fc9920;
+  color: white;
+}
+
+button:hover {
+  color: black;
+  cursor: pointer;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+nav p {
+  color: white;
+}
+
+div img {
+  width: 50px;
+}
+
+/* Body */
+
+h2 {
+  color: white;
+  position: absolute;
+  top: 80px;
+  left: 40px;
+}
+
+#link-para-foto {
+  position: absolute;
+  top: 130px;
+  left: 40px;
+}
+
+#imput-para-foto {
+  position: absolute;
+  top: 130px;
+  left: 145px;
+}
+
+#imput-para-foto:hover {
+  background-color: darkorchid;
+  border-radius: 0px;
+  color: white;
+  box-shadow: none;
+  border-style: none none solid none;
+  border: 0px;
+}
+
+#link-para-descricao {
+  position: absolute;
+  top: 155px;
+  left: 40px;
+}
+
+#imput-para-descricao {
+  position: absolute;
+  top: 155px;
+  left: 145px;
+}
+
+#imput-para-descricao:hover {
+  background-color: darkorchid;
+  border-radius: 0px;
+  color: white;
+  box-shadow: none;
+  border-style: none none solid none;
+  border: 0px;
+}
+
+#link-para-preco {
+  position: absolute;
+  top: 180px;
+  left: 40px;
+}
+
+#imput-para-preco {
+  position: absolute;
+  top: 180px;
+  left: 145px;
+}
+
+#imput-para-preco:hover {
+  background-color: darkorchid;
+  border-radius: 0px;
+  color: white;
+  box-shadow: none;
+  border-style: none none solid none;
+  border: 0px;
+}
+
+#link-para-quantidade {
+  position: absolute;
+  top: 205px;
+  left: 40px;
+}
+
+#imput-para-quantidade {
+  position: absolute;
+  top: 205px;
+  left: 145px;
+}
+
+#imput-para-quantidade:hover {
+  background-color: darkorchid;
+  border-radius: 0px;
+  color: white;
+  box-shadow: none;
+  border-style: none none solid none;
+  border: 0px;
+}
+
+#imput-para-quantidade:active {
+  color: white;
+}
+
+#buttom-enviar {
+  position: absolute;
+  top: 235px;
+  left: 10px;
+  background-color: purple;
+}
+
+/* footer */
+
+footer > div {
+  background-color: darkorchid;
+  padding: 75px;
+}
+
+#manga {
+  position: absolute;
+  top: 435px;
+  width: 200px;
+}
+
+h1 {
+  position: absolute;
+  left: 270px;
+  font-family: "anime", Courier, monospace;
+  width: 650px;
+  top: 510px;
+  font-size: 17px;
+}
+@font-face {
+  font-family: "anime";
+  src: url("animeace2_bld.otf") format("opentype"),
+    url("animeace2_bld.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h5 {
+  background-color: black;
+  position: absolute;
+  padding-left: 1000px;
+  right: 0px;
+  bottom: 0px;
+  padding-top: 30px;
+}
+
+#anime2 {
+  position: absolute;
+  font-family: "anime", Courier, monospace;
+  position: absolute;
+  top: 550px;
+  font-size: 17px;
+  left: 300px;
+}
+
+#naruto {background-color: darkorchid;}
