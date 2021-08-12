@@ -1,0 +1,11 @@
+{
+  "name": "aula41-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "testando3": "clear && node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
